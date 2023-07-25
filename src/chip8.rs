@@ -146,7 +146,7 @@ impl CPU {
     fn clear_screen(&mut self){
 
         
-        for mut i in self.display
+        for mut i in 0..self.display.len()
         {
             self.display[i as usize] = 0;
         }        
